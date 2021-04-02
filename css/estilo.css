@@ -1,0 +1,747 @@
+/* Ajuste de todo para quitar margenes predeterminadas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes de la pagina web */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Designación general de la imagen de portada */
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*.tutulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}*/
+
+/* Encabezado (Barra blanca en la parte superior de la pagina web)*/
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+}
+
+/**/
+
+.nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: cente;
+    padding: 0 40px;
+}
+
+.enlaces-header {
+    padding: 30px 0 0 230px;
+}
+
+/* Menu de navegación */
+
+.nav .enlaces-header a {
+    color: #5D6678;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Logo  parte superior izquierda*/
+
+.nav .logo {
+    height: 100%;
+}
+
+.nav .logo img {
+    height: 100%;
+}
+
+/* Portada */
+
+.header1 {
+    width: 100%;
+    height: 680px;
+    /*background: ;*/
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.705), hsla(317, 45%, 52%, 0.603)), url(../Img/Portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.288), hsla(317, 45%, 52%, 0.603)), url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Texto del titulo de la protada */
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+
+}
+
+/* Contenido de la partada (Descripción de Viena) */
+
+.textos-header p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Gastronomia */
+
+/* Fondo de la sección */
+
+.gastronomia {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.contenedor1 {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+
+.gastronomia-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.articulo {
+    width: 20%;
+    text-align: center;
+}
+
+/* Imagenes de gastronomia */
+
+.articulo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.articulo h3 {
+    margin: 20px 0;
+}
+
+.articulo p {
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Beneficios */
+
+/* Color de fondo */
+
+.beneficios {
+    background: #7c18a3;
+    padding-top: 30px;
+}
+
+/* Disposición de fondo*/
+
+.conten-beneficios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Cuadros de cada baneficio */
+
+.vivir {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.vivir .beneficio {
+    width: 45%;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+}
+
+.vivir .beneficio h4 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.vivir .beneficio p {
+    color: #f2f5fc;
+    font-weight: 300;
+}
+
+/* Texto de beneficios */
+.beneficios-text {
+    width: 37%;
+}
+
+.beneficios-text h4 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.beneficios-text p {
+    color: #fff;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+
+/* Ubicación */
+
+.ubicacion {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ubicacion>img {
+    width: 50%;
+}
+
+.text-ubicacion {
+    margin: 0 0 0 30px;
+}
+
+.text-ubicacion p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5d6678;
+    text-align: justify;
+    padding: 0 30px 0 0;
+}
+
+.text-ubicacion a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #c125ff;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(88, 0, 129, 0.46);
+}
+
+/* pie de pagina */
+
+/* fondo */
+
+footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Texto */
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.contenedor-foo {
+    text-align: center;
+}
+
+.contenedor-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contenedor-foo p {
+    color: #ccc;
+    text-align: center;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/* Ubicación */
+
+.ubicacion1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ubicacion1>img {
+    width: 60%;
+}
+
+.text-ubicacion h1 {
+    margin: 0 0 0 0;
+    font-size: 30px;
+}
+
+.text-ubicacion p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+.ubicacion1 a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #c125ff;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0, 65, 129, 0.46);
+}
+
+/* Galeria */
+
+.lugares {
+    background: #f2f2f2;
+}
+
+.galeria-lugares {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-lugar {
+    width: 24%;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .6);
+}
+
+.imagen-lugar>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(317, 45%, 52%, 0.603);
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.imagen-lugar:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/* Su gente */
+
+.contenedor-sugente {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sugente {
+    width: 35%;
+}
+
+.sugente .contenido-texto {
+    width: 45%;
+}
+
+.contenido-texto h3 {
+    margin-bottom: 15px;
+    padding: 0 0 0 15px;
+}
+
+.contenido-texto p {
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Personajes famosos */
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 50px 0;
+}
+
+.cards .card {
+    background: #921dc0;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .6);
+}
+
+.cards .card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card>.contenido-texto-card {
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card>.contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+    font-size: small;
+    text-align: justify;
+}
+
+/*Eventos*/
+
+.events{
+    background: #f2f2f2;
+}
+
+.contenedor-articulo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.event-articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+}
+
+.event-articulo>img{
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(0, 65, 129, 0.46);
+}
+
+.event-articulo h3{
+    font-size: 24px;
+    margin-top: 30px;
+}
+.event-articulo p{
+    font-weight: 100;
+    color: #5D6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+/* Historia */
+
+/* Atiguedad */
+
+.anti{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.imagen-anti{
+    width: 55%;
+}
+
+.anti-text h3{
+    padding: 0 0 15px 0;
+    
+}
+
+.anti-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 0;
+}
+
+/* Edad media */
+
+.edadmedia{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+
+.imagen-edadmedia{
+    width: 55%;
+}
+
+.edadmedia-text h3{
+    padding: 0 0 15px 30px;
+}
+
+.edadmedia-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 30px;
+}
+
+/* Edad moderna */
+
+.edadmoderna{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.imagen-edadmoderna{
+    width: 55%;
+}
+
+.edadmoderna-text h3{
+    padding: 0 0 15px 0;
+    
+}
+
+.edadmoderna-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 0;
+}
+
+/* Etapa napoleonica */
+
+.etapanapoleonica{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+
+.imagen-etapanapoleonica{
+    width: 55%;
+}
+
+.etapanapoleonica-text h3{
+    padding: 0 0 15px 30px;
+}
+
+.etapanapoleonica-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 30px;
+}
+
+/* Imperio austroungaro */
+
+.imperio{
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.imagen-imperio{
+    width: 100%;
+    
+}
+
+.imperio-text h3{
+    padding: 0 0 15px 15px;
+    
+}
+
+.imperio-text p{
+    text-align: justify;
+    width: 100%;
+    padding: 0 15px 30px 15px;   
+}
+
+/* Republica de austria */
+
+.republica{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+
+.imagen-republica{
+    width: 55%;
+}
+
+.republica-text h3{
+    padding: 0 0 15px 30px;
+}
+
+.republica-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 30px;
+}
+
+/* III Reich */
+
+.reich{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.imagen-reich{
+    width: 55%;
+}
+
+.reich-text h3{
+    padding: 0 0 15px 0;
+    
+}
+
+.reich-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 0;
+}
+
+/* Posguerra*/
+
+.posguerra{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.imagen-posguerra{
+    width: 55%;
+}
+
+.posguerra-text h3{
+    padding: 0 0 15px 30px;
+}
+
+.posguerra-text p{
+    text-align: justify;
+    width: 93%;
+    padding: 0 0 0 30px;
+}
+
+/* Creditos */
+
+.enlace{
+    text-decoration: none;
+}
+
+.imagenes{
+    margin-bottom: 15px;
+}
+.imagenes ul{
+    margin-bottom: 15px;
+}
+
+.imagenes li{
+    margin-top: 5px;
+}
+
+.contenido{
+    margin-top: 20px;
+}
+
+.contenido ul{
+    margin-bottom: 15px;
+}
+
+.contenido li{
+    margin-top: 5px;
+}
