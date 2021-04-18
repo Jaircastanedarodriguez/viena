@@ -9,51 +9,57 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
-/* Designación general de la imagen de portada */
 
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
 
 /* Encabezado (Barra blanca en la parte superior de la pagina web)*/
 
-nav {
+header{
     width: 100%;
-    background: #fff;
-    border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
-}
-
-/**/
-
-.nav {
-    display: flex;
     height: 80px;
-    width: 100%;
-    align-items: cente;
-    padding: 0 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
 }
 
-.enlaces-header {
-    padding: 30px 0 0 230px;
+#btn-menu{
+    display: none;
 }
 
-/* Menu de navegación */
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
 
-.nav .enlaces-header a {
-    color: #5D6678;
-    font-weight: 300;
+header .logo{
+    height: 100%;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a{
+    display: block;
+    padding: 30px 10px;
     text-decoration: none;
-    margin-right: 15px;
+    color: rgba(0, 0, 0, .6);
 }
 
-header .textos-header {
+
+ .header1 .textos-header {
     display: flex;
     height: 430px;
     width: 100%;
@@ -62,6 +68,9 @@ header .textos-header {
     flex-direction: column;
     text-align: center;
 }
+
+
+
 
 /* Portada */
 
@@ -82,7 +91,6 @@ header .textos-header {
 .textos-header h1 {
     font-size: 50px;
     color: #fff;
-
 }
 
 /* Contenido de la partada (Descripción de Viena) */
@@ -91,6 +99,7 @@ header .textos-header {
     font-size: 20px;
     font-weight: 300;
     color: #fff;
+    width: 75%;
 }
 
 /* Gastronomia */
@@ -457,7 +466,7 @@ footer {
     color: #fff;
 }
 
-.cards .card>.contenido-texto-card p{
+.cards .card>.contenido-texto-card p {
     font-weight: 300;
     padding-top: 5px;
     font-size: small;
@@ -466,11 +475,11 @@ footer {
 
 /*Eventos*/
 
-.events{
+.events {
     background: #f2f2f2;
 }
 
-.contenedor-articulo{
+.contenedor-articulo {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
@@ -485,7 +494,7 @@ footer {
     padding: 45px 30px 60px 30px;
 }
 
-.event-articulo>img{
+.event-articulo>img {
     display: inline-block;
     width: 230px;
     height: 230px;
@@ -494,11 +503,12 @@ footer {
     box-shadow: 0 8px 32px rgba(0, 65, 129, 0.46);
 }
 
-.event-articulo h3{
+.event-articulo h3 {
     font-size: 24px;
     margin-top: 30px;
 }
-.event-articulo p{
+
+.event-articulo p {
     font-weight: 100;
     color: #5D6678;
     margin-top: 15px;
@@ -510,23 +520,23 @@ footer {
 
 /* Atiguedad */
 
-.anti{
+.anti {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
-.imagen-anti{
+.imagen-anti {
     width: 55%;
 }
 
-.anti-text h3{
+.anti-text h3 {
     padding: 0 0 15px 0;
-    
+
 }
 
-.anti-text p{
+.anti-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 0;
@@ -534,23 +544,23 @@ footer {
 
 /* Edad media */
 
-.edadmedia{
-    display:flex;
+.edadmedia {
+    display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
 
-.imagen-edadmedia{
+.imagen-edadmedia {
     width: 55%;
 }
 
-.edadmedia-text h3{
+.edadmedia-text h3 {
     padding: 0 0 15px 30px;
 }
 
-.edadmedia-text p{
+.edadmedia-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 30px;
@@ -558,23 +568,23 @@ footer {
 
 /* Edad moderna */
 
-.edadmoderna{
+.edadmoderna {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
-.imagen-edadmoderna{
+.imagen-edadmoderna {
     width: 55%;
 }
 
-.edadmoderna-text h3{
+.edadmoderna-text h3 {
     padding: 0 0 15px 0;
-    
+
 }
 
-.edadmoderna-text p{
+.edadmoderna-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 0;
@@ -582,23 +592,23 @@ footer {
 
 /* Etapa napoleonica */
 
-.etapanapoleonica{
-    display:flex;
+.etapanapoleonica {
+    display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
 
-.imagen-etapanapoleonica{
+.imagen-etapanapoleonica {
     width: 55%;
 }
 
-.etapanapoleonica-text h3{
+.etapanapoleonica-text h3 {
     padding: 0 0 15px 30px;
 }
 
-.etapanapoleonica-text p{
+.etapanapoleonica-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 30px;
@@ -606,47 +616,47 @@ footer {
 
 /* Imperio austroungaro */
 
-.imperio{
+.imperio {
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
-.imagen-imperio{
+.imagen-imperio {
     width: 100%;
-    
+
 }
 
-.imperio-text h3{
+.imperio-text h3 {
     padding: 0 0 15px 15px;
-    
+
 }
 
-.imperio-text p{
+.imperio-text p {
     text-align: justify;
     width: 100%;
-    padding: 0 15px 30px 15px;   
+    padding: 0 15px 30px 15px;
 }
 
 /* Republica de austria */
 
-.republica{
-    display:flex;
+.republica {
+    display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
 
-.imagen-republica{
+.imagen-republica {
     width: 55%;
 }
 
-.republica-text h3{
+.republica-text h3 {
     padding: 0 0 15px 30px;
 }
 
-.republica-text p{
+.republica-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 30px;
@@ -654,23 +664,23 @@ footer {
 
 /* III Reich */
 
-.reich{
+.reich {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
-.imagen-reich{
+.imagen-reich {
     width: 55%;
 }
 
-.reich-text h3{
+.reich-text h3 {
     padding: 0 0 15px 0;
-    
+
 }
 
-.reich-text p{
+.reich-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 0;
@@ -678,22 +688,22 @@ footer {
 
 /* Posguerra*/
 
-.posguerra{
-    display:flex;
+.posguerra {
+    display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
     align-items: center;
 }
 
-.imagen-posguerra{
+.imagen-posguerra {
     width: 55%;
 }
 
-.posguerra-text h3{
+.posguerra-text h3 {
     padding: 0 0 15px 30px;
 }
 
-.posguerra-text p{
+.posguerra-text p {
     text-align: justify;
     width: 93%;
     padding: 0 0 0 30px;
@@ -701,32 +711,140 @@ footer {
 
 /* Creditos */
 
-.enlace{
+.enlace {
     text-decoration: none;
 }
 
-.imagenes{
-    margin-bottom: 15px;
-}
-.imagenes ul{
+.imagenes {
     margin-bottom: 15px;
 }
 
-.imagenes li{
+.imagenes ul {
+    margin-bottom: 15px;
+}
+
+.imagenes li {
     margin-top: 5px;
 }
 
-.contenido{
+.contenido {
     margin-top: 20px;
 }
 
-.contenido ul{
+.contenido ul {
     margin-bottom: 15px;
 }
 
-.contenido li{
+.contenido li {
     margin-top: 5px;
 }
+
+/* Responsive Cuando la pantalla mide menos de 480 px */
+
+@media (max-width:480px) {
+      
+    #btn-menu{
+        display: none;
+    }
+    
+    header label{
+        display: block;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    .menu {
+        position: fixed; 
+        background: #fff; 
+		z-index: 30; 
+        width: 100%; 
+        margin-left: -250%; 
+		margin-top: 80px;
+        transition: 0.5s;
+    } 
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #5D6678;
+    }
+
+    #btn-menu:checked~.menu {
+        margin: 80px 0;
+
+    }
+
+    .menu li a{
+        text-align: center;
+    }
+
+    
+    
+}
+
+
+/*
+
+.contenedornav .logo {
+        margin: 5px 40px;
+    }
+    
+    .contenedornav .logo img {
+        height: 100%;
+    }
+
+    .contenedornav .menu a {
+        color: #fff;
+    }
+
+    header label{
+        display: block;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+
+    .menunav {
+        max-width:460px; 
+    }
+    .menu {
+        padding: 30px 0 0 0;
+    }
+
+    .menu {
+        position: fixed;  
+		z-index: 30; 
+        width: 40%; 
+        margin-left: -100%; 
+		margin-top: 4px;
+        transition: all 1s;
+    } 
+
+    .menu ul{
+        flex-direction: column;
+        margin-top: 200px;
+       
+    }
+
+    #btn-menu:checked ~ .menu {  
+        margin: 1px; 
+    } 
+
+
+
+
+*/
+
+
+
+
 
 
 

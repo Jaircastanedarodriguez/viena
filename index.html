@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viena</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Primera parte, cabecera de la pagina web -->
-    <header class="header1">
+    <header>
         <!--Menu de navegación-->
-        <nav>
-            <section class="contenedor nav">
-                <div class="logo">
-                    <a href="./index.html"><img src="img/Viena.PNG" alt="Viena"></a>
-                </div>
-                <div class="enlaces-header">
-                    <a href="">Inicio</a>
-                    <a href="html/ubicacion.html">Ubicación</a>
-                    <a href="html/sugente.html">Su gente</a>
-                    <a href="html/eventos.html">Eventos</a>
-                    <a href="html/historia.html">Historia</a>
-                    <a href="html/creditos.html">Creditos</a>
-                </div>
-            </section>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="./img/bars-solid.svg" alt="menu"></label>
+        <a href="../index.html"><img src="./Img/Viena.PNG" alt="Viena" class="logo"></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="html/ubicacion.html">Ubicación</a></li>
+                <li><a href="html/sugente.html">Su gente</a></li>
+                <li><a href="html/eventos.html">Eventos</a></li>
+                <li><a href="html/historia.html">Historia</a></li>
+                <li><a href="html/creditos.html">Creditos</a></li>
+            </ul>
         </nav>
-        <!-- Texto de bienbenida, viena y una descripción de la ciudad -->
-        <div class="contenedor">
+    </header>
+    <div class="header1">
+         <!-- Texto de bienbenida, viena y una descripción de la ciudad -->
+         <div class="contenedor">
             <section class="textos-header">
                 <h1>VIENA</h1>
                 <p>Ciudad Austriaca a orillas de rio Danubio, actualmente la capital de Austria, una de las capitales
                     más antiguas de Europa </p>
             </section>
         </div>
-    </header>
+    </div>
     <!-- Sección de gastronomia -->
     <section class="gastronomia">
         <div class="contenedor1">
@@ -74,20 +78,24 @@
                 </div>
                 <div class="beneficio">
                     <h4>Trabajo</h4>
-                    <p>Se puede considerar el paraiso para las personas que les gusta trabajar y los salarios promedio son mas altos que en España.</p>
+                    <p>Se puede considerar el paraiso para las personas que les gusta trabajar y los salarios promedio
+                        son mas altos que en España.</p>
                 </div>
                 <div class="beneficio">
                     <h4>Cultura</h4>
-                    <p>Museos, exposiciones, festivales de música y arte… las ocasiones culturales son numerosas y la mayoria de alto nivel.</p>
+                    <p>Museos, exposiciones, festivales de música y arte… las ocasiones culturales son numerosas y la
+                        mayoria de alto nivel.</p>
                 </div>
                 <div class="beneficio">
                     <h4>Naturaleza</h4>
-                    <p>La ciudad está rodeada por un inmenso cinturón verde, que es el orgullo de todos los vieneses.</p>
+                    <p>La ciudad está rodeada por un inmenso cinturón verde, que es el orgullo de todos los vieneses.
+                    </p>
                 </div>
             </section>
             <section class="beneficios-text">
                 <h4>Beneficios</h4>
-                <p>Viena es una ciudad que acoge a muchos extrangeros, por lo que es un lugar que ofrece muchos beneficios, tanto culturales como de bienestar.</p>
+                <p>Viena es una ciudad que acoge a muchos extrangeros, por lo que es un lugar que ofrece muchos
+                    beneficios, tanto culturales como de bienestar.</p>
             </section>
         </div>
     </section>
@@ -105,7 +113,7 @@
         </section>
     </div>
 
-    
+
     <!-- Pie de pagina -->
 
     <footer>
