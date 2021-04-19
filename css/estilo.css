@@ -16,7 +16,7 @@ body {
 
 /* Encabezado (Barra blanca en la parte superior de la pagina web)*/
 
-header{
+header {
     width: 100%;
     height: 80px;
     background: #fff;
@@ -24,34 +24,33 @@ header{
     justify-content: center;
 }
 
-#btn-menu{
+#btn-menu {
     display: none;
 }
 
-header label{
+header label {
     display: none;
     width: 30px;
     height: 30px;
     padding: 10px;
 }
 
-header .logo{
+header .logo {
     height: 100%;
 }
 
 header label:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, .3);
 }
 
-.menu ul{
+.menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
 }
 
-.menu li a{
+.menu li a {
     display: block;
     padding: 30px 10px;
     text-decoration: none;
@@ -59,7 +58,7 @@ header label:hover {
 }
 
 
- .header1 .textos-header {
+.header1 .textos-header {
     display: flex;
     height: 430px;
     width: 100%;
@@ -164,7 +163,7 @@ header label:hover {
 
 .beneficios {
     background: #7c18a3;
-    padding-top: 30px;
+    
 }
 
 /* Disposición de fondo*/
@@ -223,6 +222,14 @@ header label:hover {
 
 
 /* Ubicación */
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
 
 .ubicacion {
     height: 600px;
@@ -415,7 +422,7 @@ footer {
 }
 
 .imagen-sugente {
-    width: 35%;
+    width: 45%;
 }
 
 .sugente .contenido-texto {
@@ -498,7 +505,6 @@ footer {
     display: inline-block;
     width: 230px;
     height: 230px;
-    text-align: center;
     border-radius: 50%;
     box-shadow: 0 8px 32px rgba(0, 65, 129, 0.46);
 }
@@ -739,15 +745,93 @@ footer {
     margin-top: 5px;
 }
 
+.mapa-nav{
+    text-align: center;
+}
+
+/* Responsive cuando la pantalla mide menos de 800 px y mas de 480 px*/
+
+@media screen and (max-width:800px) {
+
+/* Textos del titulo de la portada */
+
+.textos-header h1 {
+    font-size: 60px;
+}
+
+.textos-header p {
+    font-size: 20px
+}
+
+/* Gastronomia */
+
+/* Imagenes de gastronomia */
+
+.articulo img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Beneficios */
+
+.vivir .beneficio h4 {
+    font-size: 30px;
+}
+
+.beneficios-text p {
+    font-size: 18px;
+}
+
+/* Ubicación */
+
+/* Galeria  */
+
+.imagen-lugar {
+    height: 200px;
+}
+
+/* Su gente */
+
+/* Personas famosas */
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+}
+
+.cards .card>.contenido-texto-card {
+    width: 50%;
+}
+
+/* Eventos */
+
+.event-articulo {
+    width: 45%;
+}
+
+.event-articulo>img {
+    margin: 5%;
+    width: 90%;
+}
+
+/* mapa de navegación */
+
+.mapa-nav img{
+    align-items: center;
+    width: 90%;
+
+}
+
+}
+
 /* Responsive Cuando la pantalla mide menos de 480 px */
 
-@media (max-width:480px) {
-      
-    #btn-menu{
-        display: none;
-    }
-    
-    header label{
+@media screen and (max-width:480px) {
+
+    /* Menu desplegable */
+
+
+    header label {
         display: block;
         width: 50px;
         height: 40px;
@@ -757,20 +841,20 @@ footer {
     }
 
     .menu {
-        position: fixed; 
-        background: #fff; 
-		z-index: 30; 
-        width: 100%; 
-        margin-left: -250%; 
-		margin-top: 80px;
+        position: fixed;
+        background: #fff;
+        z-index: 30;
+        width: 100%;
+        margin-left: -250%;
+        margin-top: 80px;
         transition: 0.5s;
-    } 
+    }
 
-    .menu ul{
+    .menu ul {
         flex-direction: column;
     }
 
-    .menu li{
+    .menu li {
         border-top: 1px solid #5D6678;
     }
 
@@ -779,73 +863,385 @@ footer {
 
     }
 
-    .menu li a{
+    .menu li a {
         text-align: center;
     }
 
-    
-    
-}
+    /* Textos del titulo de la portada */
 
-
-/*
-
-.contenedornav .logo {
-        margin: 5px 40px;
-    }
-    
-    .contenedornav .logo img {
-        height: 100%;
+    .textos-header h1 {
+        font-size: 60px;
     }
 
-    .contenedornav .menu a {
-        color: #fff;
+    .textos-header p {
+        font-size: 20px
     }
 
-    header label{
-        display: block;
-        width: 50px;
-        height: 40px;
-        position: absolute;
-        left: 15px;
-        top: 15px;
+
+    /* Gastronomia */
+
+    .gastronomia-cont {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
-    .menunav {
-        max-width:460px; 
+    .gastronomia-cont .articulo {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 60px;
     }
-    .menu {
+
+    .gastronomia-articulo:nth-child(1),
+    .gastronomia-articulo:nth-child(2) {
+        margin-bottom: 60px;
+    }
+
+    .gastronomia-cont img {
+        width: 200px;
+        height: 200px;
+        margin-left: 15%;
+    }
+
+    /* Beneficios */
+
+    .conten-beneficios {
+        flex-direction: column-reverse;
+    }
+
+    .beneficios-text a {
+        margin-bottom: 60px;
+    }
+
+    .vivir {
+        width: 100%;
+    }
+
+    .beneficios-text {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .vivir .beneficio {
+        width: 95%;
+    }
+
+    .beneficios-text h4 {
+        padding: 0;
+        font-size: 35px;
+    }
+
+    /* Ubicación */
+
+    .ubicacion {
+        flex-direction: column;
+    }
+
+    .text-ubicacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .text-ubicacion h1 {
+        text-align: center;
+    }
+
+    .text-ubicacion p {
+        margin: 10% 0 0 5%;
+
+    }
+
+    .text-ubicacion a {
+        margin: 10% 0 0 11%;
+    }
+
+    .ubicacion>img {
+        width: 90%;
+    }
+
+    /* Fooder */
+
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+
+    .contenedor-foo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contenedor-foo h4 {
+        border: none;
+    }
+
+    .contenedor-foo p {
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding: 20px;
+    }
+
+    .titulo-final {
+        font-size: 19px;
+    }
+
+    /* Ubicación  */
+
+    .ubicacion1 {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .ubicacion1 img {
+        width: 90%;
+        margin: 10%;
+        margin-top: 40px;
+    }
+
+    .galeria-lugares {
+        flex-direction: column;
+
+    }
+
+    .galeria-lugares .imagen-lugar {
+        width: 100%;
+    }
+
+    /* Su gente */
+
+    .contenedor-sugente {
+        flex-direction: column;
+
+    }
+
+    .sugente .contenido-texto {
+        width: 95%;
+    }
+
+    .contenedor-sugente img {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card {
+        width: 90%;
+        flex-direction: column;
+        height: 400px;
+        margin: 10px;
+    }
+
+    .cards .card img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cards .card>.contenido-texto-card {
+        width: 80%;
+        text-align: center;
+    }
+
+    .cards .card>.contenido-texto-card h4 {
+        padding: 0 0 10px 0;
+    }
+
+    .cards .card>.contenido-texto-card p {
+        font-size: 15px;
+    }
+
+
+    /* Eventos */
+
+    .events {
         padding: 30px 0 0 0;
     }
 
-    .menu {
-        position: fixed;  
-		z-index: 30; 
-        width: 40%; 
-        margin-left: -100%; 
-		margin-top: 4px;
-        transition: all 1s;
-    } 
-
-    .menu ul{
+    .contenedor-articulo {
         flex-direction: column;
-        margin-top: 200px;
-       
     }
 
-    #btn-menu:checked ~ .menu {  
-        margin: 1px; 
-    } 
+    .event-articulo {
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 13%;
+    }
+
+    .contenedor-articulo .event-articulo img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /*Historia */
+
+    /*Historia */
+
+    .anti {
+        flex-direction: column;
+    }
+
+    .imagen-anti {
+        margin: 10% 0 0 0;
+        width: 90%;
+    }
+
+    .anti-text h3 {
+        padding: 0 0 15px 15px;
+    }
+
+    .anti-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Edad media */
+    .edadmedia {
+        flex-direction: column-reverse;
+    }
+
+    .imagen-edadmedia {
+        width: 90%;
+        margin: 10% 0 0 0;
+    }
+
+    .edadmedia-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    .edadmedia-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Edad moderna */
+
+    .edadmoderna {
+        flex-direction: column;
+    }
+
+    .imagen-edadmoderna {
+        width: 90%;
+        margin: 10%;
+    }
+
+    .edadmoderna-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    .edadmoderna-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Etapa napoleonica */
+
+    .etapanapoleonica {
+        flex-direction: column-reverse;
+    }
+
+    .imagen-etapanapoleonica {
+        width: 90%;
+        margin: 10%;
+    }
+
+    .etapanapoleonica-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    .etapanapoleonica-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Imperio austroungaro */
+
+    .imperio {
+        flex-direction: column;
+    }
+
+    .imagen-imperio {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .imperio-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    /* Republica de austria */
+
+    .republica {
+        flex-direction: column-reverse;
+    }
+
+    .imagen-republica {
+        width: 90%;
+        margin: 10% 0 0 0;
+    }
+
+    .republica-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    .republica-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* III Reich */
+
+    .reich {
+        flex-direction: column;
+    }
+
+    .imagen-reich {
+        width: 90%;
+        margin: 10% 0 0 0;
+    }
+
+    .reich-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    .reich-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Posguerra */
+
+    .posguerra {
+        flex-direction: column-reverse;
+    }
+
+    .imagen-posguerra {
+        width: 90%;
+        margin: 10% 0 0 0;
+    }
+
+    .posguerra-text h3 {
+        padding: 0 0 15px 5%;
+    }
+
+    .posguerra-text p {
+        width: 100%;
+        padding: 0 15px;
+    }
 
 
 
 
-*/
 
 
 
-
-
-
-
-
+}
